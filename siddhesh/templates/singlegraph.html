@@ -1,0 +1,328 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lorahost hosting - Feature</title>
+	<link rel="icon" href="{% static "img/Fevicon.png" %}" type="image/png">
+
+  <link rel="stylesheet" href="{% static "vendors/bootstrap/bootstrap.min.css" %}">
+  <link rel="stylesheet" href="{% static "vendors/themify-icons/themify-icons.css" %}" >
+  <link rel="stylesheet" href="{% static "vendors/owl-carousel/owl.theme.default.min.css" %}">
+  <link rel="stylesheet" href="{% static "vendors/owl-carousel/owl.carousel.min.css" %}">
+
+  <link rel="stylesheet" href="{% static "css/style.css" %}">
+<script src="{% static "jquery/jquery-3.5.1.min.js" %}"></script>
+<script src="{% static "chart/Chart.min.js" %}"></script>
+<style>
+.mybox
+{
+  transform: transform(-50%,-50%)
+  padding:20px;
+  background:#000;
+  color:#fff;
+  text-aligh:center;
+  box-shadow: 0 10px 30px rgba(0,0,0,1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.mybox:before
+{
+  content: '';
+  background: rgbs(255,255,255,0.05);
+  transform: shewX(-3deg);
+  pointer-events: none;
+
+}
+.mybox p
+{
+  colour: #fff;
+  font-size:24px;
+}
+.mybox label
+{
+  position: relative;
+  cursor: pointer;
+}
+.mybox label input
+{
+  display: none;
+
+}
+.mybox label span
+{
+  position: relative;
+  display: inline-block;
+  margine: 20px 10px;
+  padding: 5px;
+  width: 50px
+  border: 1px solid #444;
+  color: #BBDEFB;
+  border-radius: 4px;
+}
+.mybox label input:checked ~ span
+{
+  color: #fff;
+  border: 1px solid #008eff;
+
+}
+.mybox label input:checked ~ span:before
+{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #008eff;
+  z-index: -1;
+  filter: blue(10px);
+}
+.mybox label input:checked ~ span:after
+{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #008eff;
+  z-index: -1;
+  filter: blue(15px);
+}
+.mybox label input:checked ~ span.yes
+{
+  color: #62ff00;
+  border-color: #62ff00;
+  box-shadow: inset 0 0 10px #62ff00;
+}
+.mybox label input:checked ~ span.yes:before,
+.mybox label input:checked ~ span.yes:after
+{
+  background: #62ff00;
+}
+
+.mybox label input:checked ~ span.no
+{
+  color: #62ff00;
+  border-color: #62ff00;
+  box-shadow: inset 0 0 10px #62ff00;
+}
+.mybox label input:checked ~ span.no:before,
+.mybox label input:checked ~ span.no:after
+{
+  background: #62ff00;
+}
+
+</style>
+
+
+
+
+</head>
+<body>
+
+  <!--================ Header Menu Area start =================-->
+  <header class="header_area">
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container box_1620">
+          <a class="navbar-brand logo_h" href="index.html"><img src="{% static "img/logo.png"  %}" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav justify-content-end">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item active"><a class="nav-link" href="shownifty50.html">Nifty50</a></li>
+              <li class="nav-item"><a class="nav-link" href="service.html">Service</a>
+              <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="blog.html">Single Blog</a>
+                  <li class="nav-item"><a class="nav-link" href="blog-details.html">Blog Details</a>
+                </ul>
+							</li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-right text-center text-lg-right py-4 py-lg-0">
+              <a class="button button-link mr-4" href="#"><span class="align-middle"><i class="ti-comments"></i></span> Live Chat</a>
+              <a class="button button-outline button-small" href="#">Login</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--================Header Menu Area =================-->
+
+
+  <!--================ Banner SM Section start =================-->
+  <section class="hero-banner hero-banner-sm text-center">
+    <div class="container">
+      <h1>Choose the best below</h1>
+      <nav aria-label="breadcrumb" class="banner-breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Single Graph</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+  <!--================ Banner SM Section end =================-->'
+
+  <div class="mybox" style="margin: 0px;padding:10px;
+           background:#283593; font-family: sans-serif;">
+       <p>Select Graph Type<p>
+       <label>
+        <input type="radio" name="type1"  onclick="ChangeGraphType('line')" checked="checked" />
+        <span class="yes">Line</span>
+       </label>
+       <label>
+         <input type="radio" name="type1"  onclick="ChangeGraphType('bar')" />
+         <span class="yes">Bar</span>
+       </label>
+       <label>
+         <input type="radio" name="type1"  onclick="ChangeGraphType('polarArea')" />
+         <span class="yes">PolarArea</span>
+       </label>
+       <label>
+         <input type="radio" name="type1"  onclick="ChangeGraphType('pie')" />
+         <span class="yes">Pie</span>
+       </label>
+       <label>
+         <input type="radio" name="type1"  onclick="ChangeGraphType('doughnut')" />
+         <span class="no">Doughnut</span>
+       </label>
+  </div>
+
+
+
+
+
+    <div class="container" >
+      <h2>Total Share Capital</h2>
+      <canvas id="myChart1" ></canvas>  <! can be pass  width="20" height="20">
+    </div>
+    
+<br>
+    <div class="container" >
+      <h2>Reserves</h2>
+      <canvas id="myChart2"></canvas>
+    </div>
+    
+<br>
+    <div class="container" >
+      <h2>Net Worth</h2>
+      <canvas id="myChart3"></canvas>
+    </div>
+    
+<br>
+    <div class="container" >
+      <h2>Total Debt</h2>
+      <canvas id="myChart4"></canvas>
+    </div>
+    
+
+<script>
+
+var charts=[]; // global variable for charts
+
+function createChart(id, type, mydata,mylabel)
+{
+    
+
+    var config = {
+        type: type,
+        data: {
+            labels: ['March 2015', 'March 2016', 'March 2017', 'March 2018', 'March 2019'],
+            datasets: [{
+            label: mylabel,
+            data: mydata,
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)'
+                
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)'
+                
+            ],
+            borderWidth: 2,
+            hoverBorderWidth:4 ,
+            hoverBorderColor: '#000'
+            }]
+        },
+        options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+    };
+
+    if(typeof charts[id] == "undefined") // see if passed id exists
+    {   
+        // doesn't, so create it
+        charts[id]= new (function(){
+            this.ctx=$(id); // canvas el
+            this.chart=new Chart(this.ctx, config);
+        })();     
+        console.log('created chart '+charts[id].chart.canvas.id);     
+    }
+    else
+    {
+        charts[id].chart.destroy(); // "destroy" the "old chart"
+        charts[id].chart=new Chart(charts[id].ctx, config); // create the chart with same id and el
+        console.log('replaced chart '+charts[id].chart.canvas.id);        
+    }
+    // just to see all instances
+    Chart.helpers.each(Chart.instances, function(instance){
+        console.log('found instance '+instance.chart.canvas.id)
+    })
+
+}
+
+
+createChart('#myChart1', 'line',{{tsc|safe}},'Total Share Capital (Cr.)');
+createChart('#myChart2', 'line',{{res|safe}},'Reserves (Cr.)');
+createChart('#myChart3', 'line',{{net|safe}},'Net Woth (Cr.)');
+createChart('#myChart4', 'line',{{debt|safe}},'Total Debt (Cr.)');
+
+
+
+
+
+
+
+function ChangeGraphType(newtype)
+{
+createChart('#myChart1',newtype ,{{tsc|safe}},'Total Share Capital (Cr.)');
+createChart('#myChart2',newtype ,{{res|safe}},'Reserves (Cr.)');
+createChart('#myChart3',newtype ,{{net|safe}},'Net Woth (Cr.)');
+createChart('#myChart4',newtype ,{{debt|safe}},'Total Debt (Cr.)');
+
+
+}
+
+
+
+</script>
+
+
+</body>
+</html>

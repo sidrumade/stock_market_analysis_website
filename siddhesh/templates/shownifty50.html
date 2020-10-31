@@ -1,0 +1,979 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lorahost hosting - Feature</title>
+	<link rel="icon" href="{% static "img/Fevicon.png" %}" type="image/png">
+
+  <link rel="stylesheet" href="{% static "vendors/bootstrap/bootstrap.min.css" %}">
+  <link rel="stylesheet" href="{% static "vendors/themify-icons/themify-icons.css" %}" >
+  <link rel="stylesheet" href="{% static "vendors/owl-carousel/owl.theme.default.min.css" %}">
+  <link rel="stylesheet" href="{% static "vendors/owl-carousel/owl.carousel.min.css" %}">
+
+  <link rel="stylesheet" href="{% static "css/style.css" %}">
+
+
+</head>
+<body>
+
+  <!--================ Header Menu Area start =================-->
+  <header class="header_area">
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container box_1620">
+          <a class="navbar-brand logo_h" href="index.html"><img src="{% static "img/logo.png"  %}" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav justify-content-end">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
+              <li class="nav-item active"><a class="nav-link" href="shownifty50.html">Nifty50</a></li>
+              <li class="nav-item"><a class="nav-link" href="service.html">Service</a>
+              <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="blog.html">Single Blog</a>                 
+                  <li class="nav-item"><a class="nav-link" href="blog-details.html">Blog Details</a>                 
+                </ul>
+							</li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-right text-center text-lg-right py-4 py-lg-0">
+              <a class="button button-link mr-4" href="#"><span class="align-middle"><i class="ti-comments"></i></span> Live Chat</a>
+              <a class="button button-outline button-small" href="#">Login</a>
+            </div>
+          </div> 
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--================Header Menu Area =================-->
+
+
+  <!--================ Banner SM Section start =================-->
+  <section class="hero-banner hero-banner-sm text-center">
+    <div class="container">
+      <h1>Choose the best below</h1>
+      <nav aria-label="breadcrumb" class="banner-breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Nifty50</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+  <!--================ Banner SM Section end =================-->
+
+
+  <!--================ Feature section start =================-->
+  <section class="section-margin">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="card-feature card-feature-content">
+            <h2>Choose Your Company</h2>
+            <p>First step before invest </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" onclick="myFunction0()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.0 }} </h3>
+                   <script>
+                   function  myFunction0() {
+                   //alert("{{ cmp_list.0 }}");
+                   document.cookie = "username={{ cmp_list.0 }}";
+                    window.open("singlegraph.html","_self");
+                                           }
+                   </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction1()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.1 }} </h3>
+              <script>
+                   function  myFunction1() {
+                   //alert("{{ cmp_list.1 }}");
+                       document.cookie = "username={{ cmp_list.1 }}";
+                    window.open("singlegraph.html","_self");
+
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4"onclick="myFunction2()"  >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+               <h3 >{{ cmp_list.2 }} </h3>
+              <script>
+                   function  myFunction2() {
+                   //alert("{{ cmp_list.2 }}");
+                   document.cookie = "username={{ cmp_list.2 }}";
+                    window.open("singlegraph.html","_self");
+
+
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction3()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.3 }} </h3>
+              <script>
+                   function  myFunction3() {
+                   //alert("{{ cmp_list.3 }}");
+                    document.cookie = "username={{ cmp_list.3 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction4()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.4 }} </h3>
+              <script>
+                   function  myFunction4() {
+                   alert("{{ cmp_list.4 }}");
+                   document.cookie = "username={{ cmp_list.4 }}";
+                    window.open("singlegraph.html","_self");
+
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction5()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.5 }} </h3>
+              <script>
+                   function  myFunction5() {
+                   alert("{{ cmp_list.5 }}");
+                   document.cookie = "username={{ cmp_list.5 }}";
+                    window.open("singlegraph.html","_self");
+
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction6()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.6 }} </h3>
+              <script>
+                   function  myFunction6() {
+                   alert("{{ cmp_list.6 }}");
+                   document.cookie = "username={{ cmp_list.6 }}";
+                    window.open("singlegraph.html","_self");
+
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction7()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.7 }} </h3>
+              <script>
+                   function  myFunction7() {
+                   document.cookie = "username={{ cmp_list.7 }}";
+                    window.open("singlegraph.html","_self");
+
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction8()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.8 }} </h3>
+              <script>
+                   function  myFunction8() {
+                   document.cookie = "username={{ cmp_list.8 }}";
+                    window.open("singlegraph.html","_self");
+
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction9()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.9 }} </h3>
+              <script>
+                   function  myFunction9() {
+                   document.cookie = "username={{ cmp_list.9 }}";
+                    window.open("singlegraph.html","_self");
+
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction10()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.10 }} </h3>
+              <script>
+                   function  myFunction10() {
+
+                   document.cookie = "username={{ cmp_list.10 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction11()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.11 }} </h3>
+              <script>
+                   function  myFunction11() {
+                   document.cookie = "username={{ cmp_list.11 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction12()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.12 }} </h3>
+              <script>
+                   function  myFunction12() {
+                   document.cookie = "username={{ cmp_list.12 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction13()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.13 }} </h3>
+              <script>
+                   function  myFunction13() {
+                   document.cookie = "username={{ cmp_list.13 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction14()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.14 }} </h3>
+              <script>
+                   function  myFunction14() {
+                   document.cookie = "username={{ cmp_list.14 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction15()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.15 }} </h3>
+              <script>
+                   function  myFunction15() {
+                   document.cookie = "username={{ cmp_list.15 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+                 <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction16()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.16 }} </h3>
+              <script>
+                   function  myFunction16() {
+                   document.cookie = "username={{ cmp_list.16 }}";
+                    window.open("singlegraph.html","_self");
+
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction17()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.17 }} </h3>
+              <script>
+                   function  myFunction17() {
+                   document.cookie = "username={{ cmp_list.17 }}";
+                    window.open("singlegraph.html","_self");
+
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction18()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.18 }} </h3>
+              <script>
+                   function  myFunction18() {
+                   document.cookie = "username={{ cmp_list.18 }}";
+                    window.open("singlegraph.html","_self");
+
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction19()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.19 }} </h3>
+              <script>
+                   function  myFunction19() {
+                   document.cookie = "username={{ cmp_list.19 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction20()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.20 }} </h3>
+              <script>
+                   function  myFunction20() {
+                   document.cookie = "username={{ cmp_list.20 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction21()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.21 }} </h3>
+              <script>
+                   function  myFunction21() {
+                   document.cookie = "username={{ cmp_list.21 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction22()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.22 }} </h3>
+              <script>
+                   function  myFunction22() {
+                   document.cookie = "username={{ cmp_list.22 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction23()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.23 }} </h3>
+              <script>
+                   function  myFunction23() {
+                   document.cookie = "username={{ cmp_list.23 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction24()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.24 }} </h3>
+              <script>
+                   function  myFunction24() {
+                   document.cookie = "username={{ cmp_list.24 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction250()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.25 }} </h3>
+              <script>
+                   function  myFunction250() {
+                   document.cookie = "username={{ cmp_list.25 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction26()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.26 }} </h3>
+              <script>
+                   function  myFunction26() {
+                   document.cookie = "username={{ cmp_list.26 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction27()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.27 }} </h3>
+              <script>
+                   function  myFunction27() {
+                   document.cookie = "username={{ cmp_list.27 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction28()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.28 }} </h3>
+              <script>
+                   function  myFunction28() {
+                   document.cookie = "username={{ cmp_list.28 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction29()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.29 }} </h3>
+              <script>
+                   function  myFunction29() {
+                   document.cookie = "username={{ cmp_list.29 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction30()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.30 }} </h3>
+              <script>
+                   function  myFunction30() {
+                   document.cookie = "username={{ cmp_list.30 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction31()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.31 }} </h3>
+              <script>
+                   function  myFunction31() {
+                   document.cookie = "username={{ cmp_list.31 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction32()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.32 }} </h3>
+              <script>
+                   function  myFunction32() {
+                   document.cookie = "username={{ cmp_list.32 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction33()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.33 }} </h3>
+              <script>
+                   function  myFunction33() {
+                   document.cookie = "username={{ cmp_list.33 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction34()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.34 }} </h3>
+              <script>
+                   function  myFunction34() {
+                   document.cookie = "username={{ cmp_list.34 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction35()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.35 }} </h3>
+              <script>
+                   function  myFunction35() {
+                   document.cookie = "username={{ cmp_list.35 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction36()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.36 }} </h3>
+              <script>
+                   function  myFunction36() {
+                   document.cookie = "username={{ cmp_list.36 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction37()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.37 }} </h3>
+              <script>
+                   function  myFunction37() {
+                   document.cookie = "username={{ cmp_list.37 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction38()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.38 }} </h3>
+              <script>
+                   function  myFunction38() {
+                   document.cookie = "username={{ cmp_list.38 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction39()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.39 }} </h3>
+              <script>
+                   function  myFunction39() {
+                   document.cookie = "username={{ cmp_list.39 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction40()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.40 }} </h3>
+              <script>
+                   function  myFunction40() {
+                   document.cookie = "username={{ cmp_list.40 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction41()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.41 }} </h3>
+              <script>
+                   function  myFunction41() {
+                   document.cookie = "username={{ cmp_list.41 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction42()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.42 }} </h3>
+              <script>
+                   function  myFunction42() {
+                   document.cookie = "username={{ cmp_list.42 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction43()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.43 }} </h3>
+              <script>
+                   function  myFunction43() {
+                   document.cookie = "username={{ cmp_list.43 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction44()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.44 }} </h3>
+              <script>
+                   function  myFunction44() {
+                   document.cookie = "username={{ cmp_list.44 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction45()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.45 }} </h3>
+              <script>
+                   function  myFunction45() {
+                   document.cookie = "username={{ cmp_list.45 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction46()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.46 }} </h3>
+              <script>
+                   function  myFunction46() {
+                   document.cookie = "username={{ cmp_list.46 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction47()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.47 }} </h3>
+              <script>
+                   function  myFunction47() {
+                   document.cookie = "username={{ cmp_list.47 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction48()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.48 }} </h3>
+              <script>
+                   function  myFunction48() {
+                   document.cookie = "username={{ cmp_list.48 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" onclick="myFunction49()" >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >{{ cmp_list.49 }} </h3>
+              <script>
+                   function  myFunction49() {
+                   document.cookie = "username={{ cmp_list.49 }}";
+                    window.open("singlegraph.html","_self");
+                                          }
+              </script>
+            <!-- <p>Let place fly together third creature night at called fowl fill upon the grass </p> -->
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </section>
+
+
+   {% if Extra == True %}
+
+  <section class="section-margin">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-feature card-feature-content">
+            <h2>Data not available for</h2>
+          </div>
+        </div>
+
+         {% for i in cmp_list_Extra %}
+         <div class="col-md-6 col-lg-4"  >
+          <div class="card-feature text-center">
+            <div class="feature-icon">
+              <img src= "{% static "img/custom/Market.png" %}" style="width:30%" alt="">
+            </div>
+              <h3 >  {{ i }}  </h3>
+          </div>
+         </div>
+          {% endfor %}
+
+      </div>
+    </div>
+  </section>
+
+
+          {% endif %}
+
+
+
+  <!--================ Feature section end =================-->
+
+
+
+  <!-- ================ start footer Area ================= -->
+  <footer class="footer-area section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+					<h4>About Us</h4>
+          <p>Heaven fruitful doesn't over lesser days appear creeping seasons so behold bearing days open</p>
+          <a class="navbar-brand logo_h d-none d-xl-block" href="index.html"><img src="{% static "img/logo.png" %}" alt=""></a>
+				</div>
+				<div class="col-xl-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+					<h4>Contact Info</h4>
+					<ul>
+						<li>Address: Your address goes here, your demo address.</li>
+						<li><a href="tel:+88044338899">Phone: +880 44338899</a></li>
+						<li><a href="mailto:info@colorlib.com">Email: info@colorlib.com</a></li>
+					</ul>
+				</div>
+				<div class="col-xl-2 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+					<h4>Important Link</h4>
+					<ul>
+						<li><a href="#">WHMCS-bridge</a></li>
+						<li><a href="#">Search Domain</a></li>
+						<li><a href="#">My Account</a></li>
+						<li><a href="#">Shopping Cart</a></li>
+						<li><a href="#">Our Shop</a></li>
+					</ul>
+				</div>
+				<div class="offset-xl-1 col-xl-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+					<h4>Newsletter</h4>
+          <p>Heaven fruitful doesn't over lesser in days. Appear creeping seasons deve behold bearing days open</p>
+          
+          <div class="form-wrap" id="mc_embed_signup">
+            <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+            method="get">
+              <div class="input-group">
+                <input type="email" class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '">
+                <div class="input-group-append">
+                  <button class="btn click-btn" type="submit">
+                    <i class="ti-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+              <div style="position: absolute; left: -5000px;">
+								<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+							</div>
+
+							<div class="info"></div>
+            </form>
+          </div>
+          
+				</div>
+			</div>
+			<div class="footer-bottom row align-items-center text-center text-lg-left">
+				<p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+				<div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
+					<a href="#"><i class="ti-facebook"></i></a>
+					<a href="#"><i class="ti-twitter-alt"></i></a>
+					<a href="#"><i class="ti-dribbble"></i></a>
+					<a href="#"><i class="ti-linkedin"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+  <!-- ================ End footer Area ================= -->
+
+
+
+
+  <script src="{% static "vendors/jquery/jquery-3.2.1.min.js" %}" ></script>
+  <script src="{% static "vendors/bootstrap/bootstrap.bundle.min.js" %}" ></script>
+  <script src="{% static "vendors/owl-carousel/owl.carousel.min.js" %}" ></script>
+  <script src="{% static "js/jquery.ajaxchimp.min.js" %}" ></script>
+  <script src="{% static "js/mail-script.js" %}" ></script>
+  <script src="{% static "js/main.js" %}" ></script>
+</body>
+</html>
